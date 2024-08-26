@@ -10,7 +10,7 @@ const slidingWindow = (nums : number[], k: number): number => {
         throw new Error('k cannot be greater than the length of the array');
     }
 
-    // get the sum of the first k number of elements
+    // First get the sum of the first 'k' number of elements
     for(let i:number = 0; i < k; i++ ) {
         windowSum += nums[i];
     }
@@ -26,7 +26,7 @@ const slidingWindow = (nums : number[], k: number): number => {
 
         // update maxsum if the current window sum is greater
         maxSum = Math.max(maxSum, windowSum);
-        }
+    }
 
     return maxSum;
     
